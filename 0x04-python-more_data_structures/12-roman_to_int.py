@@ -8,16 +8,16 @@ def roman_to_int(roman_string):
     if not roman_string.isupper():
         return 0
     # Dictionary for roman numerals
-    r_dict = 
-    "I": 1,
-    "IV": 4,
-    "V": 5,
-    "IX": 9,
-    "X": 10,
-    "L": 50,
-    "C": 100,
-    "D": 500,
-    "M": 1000
+    r_dict = {
+        "I": 1,
+        "IV": 4,
+        "V": 5,
+        "IX": 9,
+        "X": 10,
+        "L": 50,
+        "C": 100,
+        "D": 500,
+        "M": 1000
     }
 
     result = 0
