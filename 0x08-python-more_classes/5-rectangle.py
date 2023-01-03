@@ -6,6 +6,7 @@ defines a rectangle
 
 class Rectangle:
     """rectangle class"""
+
     def __init__(self, width=0, height=0):
         """instantiation"""
         self.__width = width
@@ -22,7 +23,7 @@ class Rectangle:
         self.__width = value
         try:
             assert type(self.__width) == int
-        except:
+        except BaseException:
             raise TypeError("width must be an integer")
         if self.__width < 0:
             raise ValueError("width must be >= 0")
@@ -38,7 +39,7 @@ class Rectangle:
         self.__height = value
         try:
             assert type(self.__height) == int
-        except:
+        except BaseException:
             raise ValueError("height must be >= 0")
 
     def area(self):
@@ -50,3 +51,22 @@ class Rectangle:
         if self.__height == 0 or self.__width == 0:
             return 0
         return self.__width * 2 + self.__height * 2
+
+    def __str__(self):
+        """print rectangle using #"""
+        if self.__width == 0 or self. __height == 0:
+            return ""
+        for i in range(self.__height):
+            for j in range(self.__width):
+                print("#", end="")
+            print()
+        return ""
+
+    def __repr__(self):
+        """repr method to enable create new instance using #"""
+        return "Rectangle(" + str(self.__width) +\
+            ", " + str(self.__height) + ")"
+
+    def __del__(self):
+        """delete a rectangle"""
+        print("Bye rectangle...")
