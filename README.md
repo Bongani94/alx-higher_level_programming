@@ -1,6 +1,6 @@
 # Higher Level Programming
 
-* **In the high level programming, I'm continuening to practice more about programming langauge.**
+* **In the high level programming, I'm stretching to know more about programming langauge.**
 
 # The projects that I did are the following:
 
